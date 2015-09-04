@@ -408,6 +408,53 @@
     </param>
   </block>
   <block>
+    <key>fosphor_qt_sink_c</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>freq_center</key>
+      <value>fc_slider</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(440, 127)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>fosphor_qt_sink_c_0</value>
+    </param>
+    <param>
+      <key>freq_span</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>wintype</key>
+      <value>window.WIN_BLACKMAN_hARRIS</value>
+    </param>
+  </block>
+  <block>
     <key>parameter</key>
     <param>
       <key>alias</key>
@@ -447,7 +494,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>30</value>
+      <value>14</value>
     </param>
   </block>
   <block>
@@ -1022,7 +1069,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>fftsize</key>
@@ -2766,6 +2813,12 @@
       <value>400e3</value>
     </param>
   </block>
+  <connection>
+    <source_block_id>blocks_rotator_cc_0</source_block_id>
+    <sink_block_id>fosphor_qt_sink_c_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
   <connection>
     <source_block_id>blocks_rotator_cc_0</source_block_id>
     <sink_block_id>gsm_input_0</sink_block_id>
